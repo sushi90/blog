@@ -1,4 +1,4 @@
-#alinode
+#如何用alinode来优化你的node程序
 使用nodejs最令人头疼的一个问题就是内存泄露的问题。我们常常会发出感叹，测试环境是好的啊，没有为释放的资源和闭包啊。为什么一到生产环境，内存就和疯了似的，涨涨涨涨涨！
 相信很多人和我一样，会使用各种npm来查问题，例如node-heapdump，node-memwatch...。这些包使用起来并不难，但是需要手动的去profile堆快照。有的会说，so stupid！你可以监控内存啊，到达一定的内存量，你就可以让它自动profile啊。但是你怎么知道，是不是因为当时的连接数就是很大，就应该是消耗那么多的内存。即使你profile到了堆快照，通过chrome打开了堆快照，你会发现，这仅仅是开始。因为你需要明白各种参数的意义,如图
 ![v8 profile](http://7qnbf7.com1.z0.glb.clouddn.com/v8profile.png)。不可否认你可以通过[google开发者文档](https://developers.google.com/web/tools/chrome-devtools/profile/?hl=zh-cn)了解到并且可以慢慢定位，最后或许可以解决问题。但是此时可能已经花费了好几天的时间，需要做的业务需求也已经堆了一大堆了。而你仅仅只想优化你的nodejs程序，提高它的效率。但你却降低了自己的开发效率效率。
