@@ -6,7 +6,7 @@
 那么问题和重点来了，如何能高效准确的定位到nodejs的cpu负载过高，内存持续泄露这些问题呢，[alinode](https://alinode.aliyun.com/)这款工具应运而生。下面我将详细介绍我是如何利用alinode来优化自己的node程序的。
 
 ##install
-可以使用参考[官方文档](https://alinode.aliyun.com/doc/deploy)里的交互式部署，一键安装 alinode 服务。然后根据提示一步一步即可完成 alinode 运行，方便快捷。注意选择自己适合的alinode版本，这里有alinode和官方node的[版本对照表](https://alinode.aliyun.com/doc/alinode_versions)。因为安装alinode，它会给你安装一个他们hack过的node版本，里面暴露出了官方node没有暴露出来的一些v8和libuv等底层的信息，用来实时采集node进程的信息，并上传的alinode服务器进行分析。当然这些修改并不影响node的性能和各项功能。
+可以使用参考[官方文档](https://alinode.aliyun.com/doc/deploy)里的交互式部署，一键安装 alinode 服务。然后根据提示一步一步即可完成 alinode 运行，方便快捷。注意选择自己适合的alinode版本，这里有alinode和官方node的[版本对照表](https://alinode.aliyun.com/doc/alinode_versions)。因为安装alinode，它会给你安装一个他们改进过的node版本，里面暴露出了官方node没有暴露出来的一些v8和libuv等底层的信息，用来实时采集node进程的信息，并上传的alinode服务器进行分析。当然这些修改并不影响node的性能和各项功能。
 
 ##run
 先`which node`来看一下是否已经将默认的node设置成alinode的node。如果显示如`/home/work/.tnvm/versions/alinode/v0.3.4/bin/node`，则设置成功。
