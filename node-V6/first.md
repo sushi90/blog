@@ -168,7 +168,10 @@ statement in constructors:
     return passed
   }
 ```
+```
+note: if you extends from B, you must call super in constructor of C
 expression in constructor
+```
 ```javascript
   function () {
     function () {
