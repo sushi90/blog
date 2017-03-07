@@ -195,8 +195,10 @@ thing.getReadyForStuff();
 [event-loop-timers-and-nexttick][]
 
 [event loop]: https://nodejs.org/it/docs/guides/event-loop-timers-and-nexttick/#event-loop-explained
-[The I/O loop]: [http://docs.libuv.org/en/v1.x/design.html#the-i-o-loop]
-[event-loop-timers-and-nexttick]: [https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/]
+
+[The I/O loop]: http://docs.libuv.org/en/v1.x/design.html#the-i-o-loop
+
+[event-loop-timers-and-nexttick]: https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
 [handles和request]: http://docs.libuv.org/en/v1.x/design.html#handles-and-requests
 [`Class:Timeout`]: https://nodejs.org/dist/latest-v6.x/docs/api/timers.html#timers_class_timeout
 [libuv官方文档]: http://docs.libuv.org/en/v1.x/design.html#the-i-o-loop
